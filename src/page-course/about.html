@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Fraunces', 'serif'],
+            sans: ['"DM Sans"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+    <nav class="position-fixed">
+        <div class="flex justify-between items-center w-full p-[clamp(15px,8vw,30px)]">
+        <!-- logo -->
+        <div class="flex font-bold text-2xl">
+            <i class="fa-solid fa-graduation-cap" style="color: rgb(26, 23, 196);"></i>
+            <h1>LearnMate</h1>
+        </div>
+        <div class="flex gap-4 text-gray-800 opacity-[90]">
+            <a href="#">Home</a>
+            <a href="#">Course</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <form action="" class="flex">
+            <input type="search"
+            placeholder="Search for course here.."
+            class="w-full form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-200"
+            >
+            <button
+            type="submit"
+            class="rounded-r-lg bg-blue-700 px-4 py-2 text-white hover:bg-blue-800"
+            >
+            Search
+        </button>
+    </form>
+    <div class="flex gap-5">
+        <button class="px-[clamp(5px,5vw,15px)] py-[clamp(5px,5vw,10px)] border-2 border-solid text-black rounded-xl">Login</button>
+        <button class="px-[clamp(5px,5vw,15px)] py-[clamp(5px,5vw,10px)] bg-blue-800 text-white rounded-xl">Sign Up</button>
+    </div>
+    </div>
+    </nav>
+
+</body>
+</html>
