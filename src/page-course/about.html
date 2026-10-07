@@ -21,19 +21,19 @@
 </head>
 <body>
     <nav class="position-fixed">
-        <div class="flex justify-between items-center w-full p-[clamp(15px,8vw,30px)]">
+        <div class="w-full p-[clamp(15px,8vw,30px)] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4">
         <!-- logo -->
-        <div class="flex font-bold text-2xl">
+        <div class="flex font-bold text-2xl mb-2">
             <i class="fa-solid fa-graduation-cap" style="color: rgb(26, 23, 196);"></i>
             <h1>LearnMate</h1>
         </div>
-        <div class="flex gap-4 text-gray-800 opacity-[90]">
-            <a href="#">Home</a>
-            <a href="#">Course</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+        <div class="flex items-center gap-4 text-gray-800 opacity-[90] mb-2">
+            <a href="#" class="hover:text-blue-700">Home</a>
+            <a href="#" class="hover:text-blue-700">Course</a>
+            <a href="#" class="hover:text-blue-700">About</a>
+            <a href="#" class="hover:text-blue-700">Contact</a>
         </div>
-        <form action="" class="flex">
+        <form action="" class="flex mb-2 justify-center ">
             <input type="search"
             placeholder="Search for course here.."
             class="w-full form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-200"
@@ -46,12 +46,56 @@
         </button>
         
     </form>
-    <div class="flex gap-5">
-        <button class="px-[clamp(5px,5vw,15px)] py-[clamp(5px,5vw,10px)] border-2 border-solid text-black rounded-xl">Login</button>
-        <button class="px-[clamp(5px,5vw,15px)] py-[clamp(5px,5vw,10px)] bg-blue-800 text-white rounded-xl">Sign Up</button>
+    <div class="flex gap-5 mb-2 justify-center ">
+        <button class="px-[clamp(5px,5vw,15px)] py-[clamp(5px,5vw,10px)] border-2 border-solid text-black rounded-xl hover:bg-blue-800 hover:text-white">Login</button>
+        <button class="px-[clamp(5px,5vw,15px)] py-[clamp(5px,5vw,10px)] bg-blue-800 text-white rounded-xl hover:bg-blue-900">Sign Up</button>
     </div>
     </div>
     </nav>
+
+    <!-- main -->
+    
+    <main>
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 min-h-[100px] w-full px-[clamp(15px,40vw,50px)] py-[clamp(15px,50vw,30px)]" style="background: rgb(15, 15, 94);">
+        <div class="flex flex-col items-start justify-center text-white gap-4 mb-2">
+          <div class="text-white px-4 py-2 bg-blue-900 rounded-xl hover:bg-blue-600">Our course</div>
+          <h1 class="text-5xl font-bold hover:text-blue-200">Explore our courses</h1>
+          <p class="font-bold hover:text-blue-200">Find the course that boost your skill and advance your career.</p>
+        </div>
+        <div class="flex justify-end items-center">
+          <img class="w-[60%] h-auto" src="img/Image_3-removebg-preview-2.png" alt="">
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-2 px-[clamp(15px,40vw,50px)] py-[clamp(15px,50vw,30px)]">
+        <form action="" class="flex">
+          <input type="search" placeholder="Search for course..." class="w-[80%] form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200">
+          <button type="submit" class="rounded-r-lg bg-blue-700 px-4 py-2 text-white hover:bg-blue-800">
+            <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
+          </button>
+        </form>
+        <div class="flex justify-end gap-3">
+        <form action="" class="">
+          <select name="" id=""
+          class="w-80 form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200 appearance-none text-xs">
+            <option value="">All category</option>
+            <option value="">Web full-stack</option>
+            <option value="">Python</option>
+            <option value="">C++</option>
+            <option value="">Java</option>
+          </select>
+        </form>
+        <form action="" class="">
+          <select name="" id=""
+          class="w-80 form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200 appearance-none text-xs">
+            <option value="">All Level</option>
+            <option value="">Basic</option>
+            <option value="">Medium</option>
+            <option value="">Advance</option>
+          </select>
+        </form>
+        </div>
+      </div>
+    </main>
 
 </body>
 </html>
