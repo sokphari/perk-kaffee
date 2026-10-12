@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Courses Details</title>
     <link rel="stylesheet" href="/perk-kaffee/src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
@@ -12,7 +12,48 @@
 </head>
 
 <body>
-    <div class="m-5">
+     <header class="text-slate-700 container relative mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center">
+  <a href="#" class="flex items-center whitespace-nowrap text-2xl font-black">
+    <span class="mr-2 w-8">
+      <i class="fa-solid fa-graduation-cap"></i>
+    </span>
+    LearnMate
+  </a>
+  <input type="checkbox" class="peer hidden" id="navbar-open" />
+  <label class="absolute top-5 right-5 cursor-pointer lg:hidden" for="navbar-open">
+    <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </label>
+  <nav aria-label="Header Navigation" class="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row">
+    <ul class="flex w-full flex-col items-center space-y-2 lg:flex-row  lg:space-y-0">
+      <li class="lg:mr-12"><a class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Home</a></li>
+      <li class="lg:mr-12"><a class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Courses</a></li>
+      <li class="lg:mr-12"><a class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">About</a></li>
+      <li class="lg:mr-12"><a class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Contact</a></li>
+    </ul>
+    <hr class="mt-4 w-full lg:hidden" />
+    <div class="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
+       <a href="#" title="" class="whitespace-nowrap rounded font-medium transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-opacity-50">
+    <div class="mx-auto max-w-md">
+      <form action="" class="relative mx-auto w-max">
+        <input type="search" 
+             placeholder="Search" class="peer cursor-pointer relative z-10 h-12 w-12  bg-transparent pl-12 outline-none focus:w-full focus:cursor-text  focus:pl-16 focus:pr-4" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </form>
+    </div>
+       </a>
+      <a href="#" title="" class="whitespace-nowrap rounded font-medium transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-opacity-50"> Log in </a>
+      <a href="#" title="" class="whitespace-nowrap rounded-xl bg-blue-700 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">Sign Up</a>
+    </div>
+  </nav>
+</header>
+
+
+
+<div class="m-7">
 
 <div class="group mx-2 mt-10 grid max-w-screen-lg grid-cols-1 space-x-8 overflow-hidden rounded-lg border text-gray-700 shadow transition hover:shadow-lg sm:mx-auto sm:grid-cols-5">
   <a href="#" class="col-span-2 text-left text-gray-600 hover:text-gray-700">
@@ -49,17 +90,198 @@
          <span><i class="fa-brands fa-wpbeginner"></i></span>
          <span>Beginner</span>
     </div>
-    <div class="flex justify-between">
-         <h1 class="my-5 rounded-md px-1 py-2  transition hover:scale-105  text-black text-5xl font-semibold">$49</h1>
+    <div class="flex justify-between mt-4 gap-4">
+         <h1 class="my-5 rounded-md px-1 py-1  transition hover:scale-105  text-black text-5xl font-semibold">$49</h1>
           <a href="#" class="w-[150px] my-5 rounded-md px-1 py-4 text-center transition hover:scale-105 bg-blue-600 text-white ">Enroll Now </a>
-          <i class="fa-regular fa-heart my-5 rounded-md px-5 py-4 text-center transition hover:scale-105 text-black text-[25px] b"></i>
+          <a href="" class=" my-5 rounded-[8px] px-3 py-3  transition hover:scale-105 hover:bg-red-500 hover:text-white text-black text-[20px] border border-gray-200 shadow">
+            <i class="fa-regular fa-heart"></i>
+          </a>
     </div>
   </div>
 </div>
 
+<div class="bg-white border-b border-slate-200 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8">
+      <a href="#overview" class="py-4 text-sm font-semibold text-blue-600 border-b-2 border-blue-600">Overview</a>
+      <a href="#curriculum" class="py-4 text-sm font-medium text-slate-500 hover:text-slate-800">Curriculum</a>
+      <a href="#instructor" class="py-4 text-sm font-medium text-slate-500 hover:text-slate-800">Instructor</a>
+      <a href="#reviews" class="py-4 text-sm font-medium text-slate-500 hover:text-slate-800">Reviews</a>
+    </div>
+  </div>
 
+  <!-- Content Grid -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+      <!-- Left / Main Column -->
+      <div class="lg:col-span-2 space-y-10">
+        
+        <!-- About This Course -->
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-slate-900">About This Course</h2>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            Learn modern web development with React, the most popular JavaScript library for building user interfaces. This course covers everything from the basics to advanced concepts, with hands-on projects and real-world examples.
+          </p>
+        </section>
+
+        <!-- What You'll Learn -->
+        <section class="bg-slate-100/70 border border-slate-200 rounded-xl p-6 space-y-4">
+          <h2 class="text-lg font-bold text-slate-900">What You'll Learn</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+            <div class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600 mt-0.5 shrink-0"></i>
+              <i class="fa-solid fa-check"></i>
+              <span>Understand React components and JSX</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600 mt-0.5 shrink-0"></i>
+              <i class="fa-solid fa-check"></i>
+              <span>Manage state and props effectively</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600 mt-0.5 shrink-0"></i>
+              <i class="fa-solid fa-check"></i>
+              <span>Work with React Router for navigation</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600 mt-0.5 shrink-0"></i>
+              <i class="fa-solid fa-check"></i>
+              <span>Build real-world projects (e.g., todo app, portfolio)</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Course Curriculum -->
+        <section class="space-y-4">
+          <h2 class="text-xl font-bold text-slate-900">Course Curriculum</h2>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <!-- Section Header -->
+            <div class="bg-slate-50 p-4 border-b border-slate-200 flex justify-between items-center cursor-pointer">
+              <span class="font-semibold text-slate-800 text-sm">1. Getting Started with React</span>
+              <span class="text-xs text-slate-500">3 lessons • 45 min</span>
+            </div>
+
+            <!-- Lessons List -->
+            <div class="divide-y divide-slate-100">
+              <div class="p-3.5 px-4 flex items-center justify-between hover:bg-slate-50/50 transition">
+                <div class="flex items-center gap-3 text-sm text-slate-700">
+                  <i data-lucide="play-circle" class="w-4 h-4 text-blue-600"></i>
+                  <span>1. Introduction to React</span>
+                </div>
+                <span class="text-xs text-slate-400">15 min</span>
+              </div>
+
+              <div class="p-3.5 px-4 flex items-center justify-between hover:bg-slate-50/50 transition">
+                <div class="flex items-center gap-3 text-sm text-slate-700">
+                  <i data-lucide="play-circle" class="w-4 h-4 text-blue-600"></i>
+                  <span>2. Setting up Your Development Environment</span>
+                </div>
+                <span class="text-xs text-slate-400">15 min</span>
+              </div>
+
+              <div class="p-3.5 px-4 flex items-center justify-between hover:bg-slate-50/50 transition">
+                <div class="flex items-center gap-3 text-sm text-slate-700">
+                  <i data-lucide="play-circle" class="w-4 h-4 text-blue-600"></i>
+                  <span>3. Your First React Component</span>
+                </div>
+                <span class="text-xs text-slate-400">15 min</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Column Sidebar -->
+      <div class="space-y-6">
+        
+        <!-- Course Includes Card -->
+        <div class="bg-blue-50/50 border border-blue-100 rounded-2xl p-6 space-y-4">
+          <h3 class="font-bold text-slate-900">This course includes:</h3>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li class="flex items-center gap-3">
+              <i data-lucide="file-text" class="w-4 h-4 text-blue-600"></i>
+              <span>12 video lessons</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="clock" class="w-4 h-4 text-blue-600"></i>
+              <span>4 hours of content</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="award" class="w-4 h-4 text-blue-600"></i>
+              <span>Certificate of completion</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="infinity" class="w-4 h-4 text-blue-600"></i>
+              <span>Lifetime access</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="smartphone" class="w-4 h-4 text-blue-600"></i>
+              <span>Access on all devices</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Instructor Card -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 space-y-4 shadow-sm">
+          <h3 class="font-bold text-slate-900">Instructor</h3>
+          <div class="flex items-center gap-4">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+              alt="Sarah Johnson" 
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Sarah Johnson</h4>
+              <p class="text-xs text-blue-600 font-medium">Full Stack Developer</p>
+              <p class="text-xs text-slate-500 mt-1">5+ years of experience in web development and teaching.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
 </div>
+
+ <footer class="text-slate-700 container relative mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center">
+  <a href="#" class="flex items-center whitespace-nowrap text-2xl font-black justify-center">
+    <span class="mr-2 w-8">
+      <i class="fa-solid fa-graduation-cap"></i>
+    </span>
+    LearnMate
+  </a>
+  <input type="checkbox" class="peer hidden" id="navbar-open" />
+  <label class="absolute top-5 right-5">
     
+  </label>
+  <nav aria-label="footer Navigation" class="pt-8 max-h-60 flex max-h-0 w-full flex-col items-center  transition-all xl:ml-24 xl:max-h-full xl:flex-row">
+    <ul class="flex w-full flex-col justify-center items-center space-y-2 xl:flex-row  xl:space-y-0 ">
+      <li class="lg:mr-12"><a class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Home</a></li>
+      <li class="lg:mr-12"><a class="rounded text-blue-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Courses</a></li>
+      <li class="lg:mr-12"><a class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">About</a></li>
+      <li class="lg:mr-12"><a class="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Contact</a></li>
+    </ul>
+    <hr class="mt-4 w-full lg:hidden" />
+    <div class="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
+       <a href="#" title="" class="whitespace-nowrap rounded-xl bg-white shadow px-5 py-3 font-medium text-blue-900 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">
+        <i class="fa-brands fa-facebook"></i>
+       </a>
+      <a href="#" title="" class="whitespace-nowrap rounded-xl bg-white shadow px-5 py-3 font-medium text-blue-900 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" title="" class="whitespace-nowrap rounded-xl bg-white shadow px-5 py-3 font-medium text-blue-900 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">
+        <i class="fa-brands fa-discord"></i>
+      </a>
+      <a href="#" title="" class="whitespace-nowrap rounded-xl bg-white shadow px-5 py-3 font-medium text-blue-900 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </div>
+  </nav>
+</footer>
+     <div class="flex justify-center  font-semibold text-[18px] items-center">
+      <i class="fa-regular fa-copyright"></i>
+      <span>2025 LearnMate All</span>
+    </div>
 </body>
 
 </html>
