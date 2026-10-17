@@ -21,17 +21,17 @@
 </head>
 <body>
     <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow">
-        <div class="w-full p-[clamp(15px,8vw,30px)] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4">
+        <div class="w-full p-[clamp(15px,8vw,30px)] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
         <!-- logo -->
-        <div class="flex font-bold text-2xl mb-2">
+        <div class="flex font-bold text-[clamp(1.875rem,1.2rem+3vw,2.6rem)] mb-2">
             <i class="fa-solid fa-graduation-cap" style="color: rgb(26, 23, 196);"></i>
             <h1>LearnMate</h1>
         </div>
         <div class="flex flex-wrap items-center gap-4 text-gray-800 mb-2">
-            <a href="#" class="hover:text-blue-700">Home</a>
-            <a href="#" class="hover:text-blue-700">Course</a>
-            <a href="#" class="hover:text-blue-700">About</a>
-            <a href="#" class="hover:text-blue-700">Contact</a>
+            <a href="#" class="hover:text-blue-700 hover:bg-blue-100 p-[clamp(3px,4vw,6px)] rounded-xl">Home</a>
+            <a href="#" class="hover:text-blue-700 hover:bg-blue-100 p-[clamp(3px,4vw,6px)] rounded-xl">Course</a>
+            <a href="#" class="hover:text-blue-700 hover:bg-blue-100 p-[clamp(3px,4vw,6px)] rounded-xl">About</a>
+            <a href="#" class="hover:text-blue-700 hover:bg-blue-100 p-[clamp(3px,4vw,6px)] rounded-xl">Contact</a>
         </div>
         <form action="" class="flex mb-2 justify-center ">
             <input type="search"
@@ -55,7 +55,7 @@
 
     <!-- main -->
     
-    <main class="pt-[250px] md:pt-[90px]">
+    <main class="pt-[250px] md:pt-[170px]">
       <div class="grid sm:grid-cols-1 md:grid-cols-2 min-h-[100px] w-full px-[clamp(15px,40vw,50px)] py-[clamp(15px,50vw,30px)]" style="background: rgb(15, 15, 94);">
         <div class="flex flex-col items-start justify-center text-white gap-4">
           <div class="text-white px-4 py-2 bg-blue-900 rounded-xl hover:bg-blue-600">Our course</div>
@@ -101,7 +101,7 @@
         <!-- side bar -->
         <div class="w-full md:w-[20%] md:shrink-0">
           <h1 class="mb-3 font-bold">Categories</h1>
-          <ul class="shadow shadow-sm shadow-gray-700 px-[clamp(3px,5vw,8px)] py-[clamp(15px,5vw,25px)] rounded-lg">
+          <ul class="shadow shadow-sm shadow-gray-700 px-[clamp(3px,5vw,8px)] py-[clamp(15px,5vw,25px)] rounded-lg text-[clamp(6px,3vw,15px)]">
             <li class="flex justify-between mb-3 active:bg-blue-900 hover:bg-blue-200 px-4 py-2 rounded-lg">
               <h1><i class="fa-solid fa-border-all text-blue-900 hover:text-blue-700"></i>All course</h1>
               <p>24</p>
@@ -135,7 +135,7 @@
         <!-- card course -->
          <div class="w-full md:w-[80%]">
           <p class="text-end mb-3">24 course found</p>
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 shadow shadow-sm shadow-gray-700 px-[clamp(3px,5vw,15px)] py-[clamp(15px,5vw,25px)] rounded-lg">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 shadow shadow-sm shadow-gray-700 px-[clamp(3px,5vw,15px)] py-[clamp(15px,5vw,25px)] rounded-lg">
             <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
               <div class="w-full h-44">
                 <img class="w-full h-full object-cover" src="img/Webpogramming.jpg" alt="">
@@ -293,6 +293,24 @@
          </div>
       </div>
     </main>
-
+    <footer class="border-t border-gray-300">
+      <div class="w-full p-[clamp(15px,8vw,30px)] items-center grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-1">
+        <!-- logo -->
+        <div class="flex font-bold text-[clamp(1.875rem,1.2rem+3vw,2.6rem)] mb-2">
+            <i class="fa-solid fa-graduation-cap" style="color: rgb(26, 23, 196);"></i>
+            <h1>LearnMate</h1>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 text-gray-800 mb-2">
+            <a href="#" class="hover:text-blue-700 hover:bg-blue-100 p-[clamp(3px,4vw,8px)] rounded-xl">Home</a>
+            <a href="#" class="hover:text-blue-700 hover:bg-blue-100 p-[clamp(3px,4vw,8px)] rounded-xl">Course</a>
+            <a href="#" class="hover:text-blue-700 hover:bg-blue-100 p-[clamp(3px,4vw,8px)] rounded-xl">About</a>
+            <a href="#" class="hover:text-blue-700 hover:bg-blue-100 p-[clamp(3px,4vw,8px)] rounded-xl">Contact</a>
+        </div>
+        <div class="flex gap-1 flex-wrap items-center justify-end gap-4 text-gray-800 mb-2">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-telegram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </footer>
 </body>
 </html>
