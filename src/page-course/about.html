@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-    <nav class="position-fixed">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow">
         <div class="w-full p-[clamp(15px,8vw,30px)] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4">
         <!-- logo -->
         <div class="flex font-bold text-2xl mb-2">
             <i class="fa-solid fa-graduation-cap" style="color: rgb(26, 23, 196);"></i>
             <h1>LearnMate</h1>
         </div>
-        <div class="flex items-center gap-4 text-gray-800 opacity-[90] mb-2">
+        <div class="flex flex-wrap items-center gap-4 text-gray-800 mb-2">
             <a href="#" class="hover:text-blue-700">Home</a>
             <a href="#" class="hover:text-blue-700">Course</a>
             <a href="#" class="hover:text-blue-700">About</a>
@@ -46,7 +46,7 @@
         </button>
         
     </form>
-    <div class="flex gap-5 mb-2 justify-center ">
+    <div class="flex gap-5 mb-2 justify-end">
         <button class="px-[clamp(5px,5vw,15px)] py-[clamp(5px,5vw,10px)] border-2 border-solid text-black rounded-xl hover:bg-blue-800 hover:text-white">Login</button>
         <button class="px-[clamp(5px,5vw,15px)] py-[clamp(5px,5vw,10px)] bg-blue-800 text-white rounded-xl hover:bg-blue-900">Sign Up</button>
     </div>
@@ -55,38 +55,39 @@
 
     <!-- main -->
     
-    <main>
+    <main class="pt-[250px] md:pt-[90px]">
       <div class="grid sm:grid-cols-1 md:grid-cols-2 min-h-[100px] w-full px-[clamp(15px,40vw,50px)] py-[clamp(15px,50vw,30px)]" style="background: rgb(15, 15, 94);">
-        <div class="flex flex-col items-start justify-center text-white gap-4 mb-2">
+        <div class="flex flex-col items-start justify-center text-white gap-4">
           <div class="text-white px-4 py-2 bg-blue-900 rounded-xl hover:bg-blue-600">Our course</div>
-          <h1 class="text-5xl font-bold hover:text-blue-200">Explore our courses</h1>
+          <h1 class="text-3xl md:text-5xl font-bold hover:text-blue-200">Explore our courses</h1>
           <p class="font-bold hover:text-blue-200">Find the course that boost your skill and advance your career.</p>
         </div>
         <div class="flex justify-end items-center">
-          <img class="w-[60%] h-auto" src="img/Image_3-removebg-preview-2.png" alt="">
+          <img class="w-[70%] md:w-[60%] h-auto" src="img/Image_3-removebg-preview-2.png" alt="">
         </div>
       </div>
-      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-2 px-[clamp(15px,40vw,50px)] py-[clamp(15px,50vw,30px)]">
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-2 px-[clamp(15px,40vw,30px)] py-[clamp(15px,50vw,20px)]">
         <form action="" class="flex">
-          <input type="search" placeholder="Search for course..." class="w-[80%] form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200">
-          <button type="submit" class="rounded-r-lg bg-blue-700 px-4 py-2 text-white hover:bg-blue-800">
+          <input type="search" placeholder="Search for course..." class="w-[85%] form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200">
+          <button type="submit" class="w-[15%] rounded-r-lg bg-blue-700 px-4 py-2 text-white hover:bg-blue-800">
             <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
           </button>
         </form>
-        <div class="flex justify-end gap-3">
-        <form action="" class="">
-          <select name="" id=""
-          class="w-80 form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200 appearance-none text-xs">
+        <div class="flex flex-wrap md:justify-end gap-3">
+          <form action="" class="w-full sm:w-auto">
+            <select class="w-full sm:w-48 rounded-lg border border-gray-300 px-4 py-2 text-xs focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200">
             <option value="">All category</option>
-            <option value="">Web full-stack</option>
-            <option value="">Python</option>
-            <option value="">C++</option>
-            <option value="">Java</option>
+            <option value="">All course</option>
+            <option value="">Programming</option>
+            <option value="">Language</option>
+            <option value="">Businese</option>
+            <option value="">Design</option>
+            <option value="">Datascience</option>
+            <option value="">Other</option>
           </select>
         </form>
-        <form action="" class="">
-          <select name="" id=""
-          class="w-80 form-control rounded-l-lg border border-gray-300 px-4 py-2 focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200 appearance-none text-xs">
+        <form action="" class="w-full sm:w-auto">
+          <select class="w-full sm:w-48 rounded-lg border border-gray-300 px-4 py-2 text-xs focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200">
             <option value="">All Level</option>
             <option value="">Basic</option>
             <option value="">Medium</option>
@@ -94,6 +95,202 @@
           </select>
         </form>
         </div>
+      </div>
+      <div class="w-full flex flex-col md:flex-row gap-4 px-4 md:px-[clamp(15px,4vw,50px)] py-6">
+
+        <!-- side bar -->
+        <div class="w-full md:w-[20%] md:shrink-0">
+          <h1 class="mb-3 font-bold">Categories</h1>
+          <ul class="shadow shadow-sm shadow-gray-700 px-[clamp(3px,5vw,8px)] py-[clamp(15px,5vw,25px)] rounded-lg">
+            <li class="flex justify-between mb-3 active:bg-blue-900 hover:bg-blue-200 px-4 py-2 rounded-lg">
+              <h1><i class="fa-solid fa-border-all text-blue-900 hover:text-blue-700"></i>All course</h1>
+              <p>24</p>
+            </li>
+            <li class="flex justify-between mb-3  active:bg-blue-900 hover:bg-blue-200 px-4 py-2 rounded-lg">
+              <h1 ><i class="fa-solid fa-laptop-code  text-blue-900 hover:text-blue-700"></i>Programming</h1>
+              <p>10</p>
+            </li>
+            <li class="flex justify-between mb-3  active:bg-blue-900 hover:bg-blue-200 px-4 py-2 rounded-lg">
+              <h1><i class="fa-solid fa-swatchbook  text-blue-900 hover:text-blue-700"></i>Design</h1>
+              <p>4</p>
+            </li>
+            <li class="flex justify-between mb-3  active:bg-blue-900 hover:bg-blue-200 px-4 py-2 rounded-lg">
+              <h1><i class="fa-solid fa-briefcase  text-blue-900 hover:text-blue-700"></i>Businese</h1>
+              <p>2</p>
+            </li>
+            <li class="flex justify-between mb-3  active:bg-blue-900 hover:bg-blue-200 px-4 py-2 rounded-lg">
+              <h1><i class="fa-solid fa-chart-line  text-blue-900 hover:text-blue-700"></i>Data Science</h1>
+              <p>1</p>
+            </li>
+            <li class="flex justify-between mb-3  active:bg-blue-900 hover:bg-blue-200 px-4 py-2 rounded-lg">
+              <h1><i class="fa-solid fa-hexagon-nodes  text-blue-900 hover:text-blue-700"></i>Language</h1>
+              <p>5</p>
+            </li>
+            <li class="flex justify-between mb-3  active:bg-blue-900 hover:bg-blue-200 px-4 py-2 rounded-lg">
+              <h1><i class="fa-solid fa-network-wired  text-blue-900 hover:text-blue-700"></i>Other</h1>
+              <p>2</p>
+            </li>
+          </ul>
+        </div>
+        <!-- card course -->
+         <div class="w-full md:w-[80%]">
+          <p class="text-end mb-3">24 course found</p>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 shadow shadow-sm shadow-gray-700 px-[clamp(3px,5vw,15px)] py-[clamp(15px,5vw,25px)] rounded-lg">
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/Webpogramming.jpg" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Programming</p>
+                <h1 class="font-bold mb-2">Web Development with React</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.8 <span>(2.2k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$49.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/UxUi.png" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Design</p>
+                <h1 class="font-bold mb-2">UX/UI Design</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.2 <span>(1.9k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$39.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/Datascience.png" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Data-science</p>
+                <h1 class="font-bold mb-2">Data-Science Basic</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.5 <span>(2.3k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$59.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/python.png" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Language</p>
+                <h1 class="font-bold mb-2">Python</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.7 <span>(2.1k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$49.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/Java.png" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Language</p>
+                <h1 class="font-bold mb-2">Java</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.7 <span>(2.1k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$49.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/cshap.jpg" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Language</p>
+                <h1 class="font-bold mb-2">C#</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.7 <span>(2.1k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$49.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/c++.png" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Language</p>
+                <h1 class="font-bold mb-2">C++</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.7 <span>(2.1k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$49.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/busineseanalysis.png" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Businese</p>
+                <h1 class="font-bold mb-2">Businese Analysis</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.7 <span>(2.1k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$39.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg shadow-gray-500 mb-3">
+              <div class="w-full h-44">
+                <img class="w-full h-full object-cover" src="img/mobileapp.png" alt="">
+              </div>
+              <div class="w-full flex flex-col items-start justify-center px-[clamp(3px,5vw,15px)] py-[clamp(5px,5vw,15px)]">
+                <p class=" mb-2 bg-blue-200 hover:bg-blue-400 px-[clamp(3px,5vw,10px)] rounded-2xl">Programming</p>
+                <h1 class="font-bold mb-2">Full-stack Mobile App</h1>
+                <div class="flex gap-10 mb-3">
+                  <p class="text-gray-800 opacity-75"><i class="fa-solid fa-chalkboard text-gray-800"></i>12 Lesson</p>
+                  <p class="text-end opacity-75 text-gray-800"><i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>4.6 <span>(1.1k)</span></p>
+                </div>
+                <div class="flex w-full justify-between items-center font-bold">
+                  <h1>$79.99</h1>
+                  <button class="items-end px-[clamp(3px,5vw,10px)] py-[clamp(3px,5vw,10px)] bg-blue-700 hover:bg-blue-600 text-white rounded-xl"><a href="#">View course</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
       </div>
     </main>
 
